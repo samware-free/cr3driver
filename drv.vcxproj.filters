@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="drv.cpp" />
+    <ClCompile Include="m\utils.cpp" />
+    <ClCompile Include="hide\hide.cpp">
+      <Filter>hide</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="definitions.hpp" />
+    <ClInclude Include="ntapi.hpp" />
+    <ClInclude Include="ntstructs.hpp" />
+    <ClInclude Include="m\shared.h" />
+    <ClInclude Include="m\utils.h" />
+    <ClInclude Include="hide\includes.h">
+      <Filter>hide</Filter>
+    </ClInclude>
+    <ClInclude Include="hide\skcrypt.h">
+      <Filter>hide</Filter>
+    </ClInclude>
+    <ClInclude Include="hide\structs.h">
+      <Filter>hide</Filter>
+    </ClInclude>
+    <ClInclude Include="hide\util.h">
+      <Filter>hide</Filter>
+    </ClInclude>
+    <ClInclude Include="CR3.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="hide">
+      <UniqueIdentifier>{54060831-dff3-4373-84f3-da3df1b9fbd7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
