@@ -50,8 +50,8 @@ make sure you make them the same in usermode and driver
 
 and change 
 arguments.address = (ULONGLONG)address - 201934901; //change me
-		arguments.buffer = (ULONGLONG)buffer - 21489184;//change me
-		arguments.size = size - 218949184;//change me
-		arguments.process_id = process_id - 214891894;//change me
+arguments.buffer = (ULONGLONG)buffer - 21489184;//change me
+arguments.size = size - 218949184;//change me
+arguments.process_id = process_id - 214891894;//change me
 make sure you make them the same in usermode and driver 
         
