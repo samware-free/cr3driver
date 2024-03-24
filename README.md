@@ -36,18 +36,22 @@ ADD OT USERMODE
 
 
  you will have to change codes       
-#define code_rDTB CTL_CODE(FILE_DEVICE_UNKNOWN, 0x91, METHOD_BUFFERED, FILE_SPECIAL_ACCESS)
-#define code_rw CTL_CODE(FILE_DEVICE_UNKNOWN, 0x92, METHOD_BUFFERED, FILE_SPECIAL_ACCESS)
-#define code_ba CTL_CODE(FILE_DEVICE_UNKNOWN, 0x93, METHOD_BUFFERED, FILE_SPECIAL_ACCESS)
-#define code_get_guarded_region CTL_CODE(FILE_DEVICE_UNKNOWN, 0x94, METHOD_BUFFERED, FILE_SPECIAL_ACCESS)
-#define code_move CTL_CODE(FILE_DEVICE_UNKNOWN, 0x95, METHOD_BUFFERED, FILE_SPECIAL_ACCESS)
-#define code_spoof CTL_CODE(FILE_DEVICE_UNKNOWN, 0x96, METHOD_BUFFERED, FILE_SPECIAL_ACCESS)
-#define code_unlock CTL_CODE(FILE_DEVICE_UNKNOWN, 0x97, METHOD_BUFFERED, FILE_SPECIAL_ACCESS)
+#define code_rDTB CTL_CODE(FILE_DEVICE_UNKNOWN, 0x91, METHOD_BUFFERED, FILE_SPECIAL_ACCESS)//change me
+#define code_rw CTL_CODE(FILE_DEVICE_UNKNOWN, 0x92, METHOD_BUFFERED, FILE_SPECIAL_ACCESS)//change me
+#define code_ba CTL_CODE(FILE_DEVICE_UNKNOWN, 0x93, METHOD_BUFFERED, FILE_SPECIAL_ACCESS)//change me
+#define code_get_guarded_region CTL_CODE(FILE_DEVICE_UNKNOWN, 0x94, METHOD_BUFFERED, FILE_SPECIAL_ACCESS)//change me
+#define code_move CTL_CODE(FILE_DEVICE_UNKNOWN, 0x95, METHOD_BUFFERED, FILE_SPECIAL_ACCESS)//change me
+#define code_spoof CTL_CODE(FILE_DEVICE_UNKNOWN, 0x96, METHOD_BUFFERED, FILE_SPECIAL_ACCESS)//change me
+#define code_unlock CTL_CODE(FILE_DEVICE_UNKNOWN, 0x97, METHOD_BUFFERED, FILE_SPECIAL_ACCESS)//change me
 #define code_security 0x76
 
 make sure you make them the same in usermode and driver 
 
 
-
-
+and change 
+arguments.address = (ULONGLONG)address - 201934901; //change me
+		arguments.buffer = (ULONGLONG)buffer - 21489184;//change me
+		arguments.size = size - 218949184;//change me
+		arguments.process_id = process_id - 214891894;//change me
+make sure you make them the same in usermode and driver 
         
