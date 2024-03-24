@@ -34,7 +34,8 @@ ADD OT USERMODE
             SPOOF_CALL(Sleep)(-1);
         }
 
-        you will have to change codes
+
+ you will have to change codes       
 #define code_rDTB CTL_CODE(FILE_DEVICE_UNKNOWN, 0x91, METHOD_BUFFERED, FILE_SPECIAL_ACCESS)
 #define code_rw CTL_CODE(FILE_DEVICE_UNKNOWN, 0x92, METHOD_BUFFERED, FILE_SPECIAL_ACCESS)
 #define code_ba CTL_CODE(FILE_DEVICE_UNKNOWN, 0x93, METHOD_BUFFERED, FILE_SPECIAL_ACCESS)
