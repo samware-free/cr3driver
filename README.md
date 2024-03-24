@@ -7,8 +7,8 @@ drv.h driver coms
 
 ADD OT USERMODE
 
-  if (mem::find_driver()) {
-            
+
+        if (mem::find_driver()) {
             SPOOF_CALL(printf)(_("\nDriver was initialized!\n"));
         }
         else {
@@ -18,7 +18,8 @@ ADD OT USERMODE
             SPOOF_CALL(exit)(0);
         }
 
- const wchar_t* processName = L"EasyAntiCheat_EOS.exe";
+
+         const wchar_t* processName = L"EasyAntiCheat_EOS.exe";
         if (IsProcessRunning(processName)) {
             std::wcout << L"The process is running." << std::endl;
             EAC = true;
@@ -27,7 +28,6 @@ ADD OT USERMODE
             std::wcout << L"The process is not running." << std::endl;
             EAC = false;
         }
-
         if (!mem::CR3())
         {
             SPOOF_CALL(printf)(_("\nCR3 not good!...\n"));
